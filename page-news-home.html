@@ -1,0 +1,587 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta
+            name="apple-mobile-web-app-status-bar-style"
+            content="black-translucent"
+        />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, viewport-fit=cover"
+        />
+        <title>News</title>
+        <link rel="stylesheet" type="text/css" href="styles/bootstrap.css" />
+        <link rel="stylesheet" type="text/css" href="styles/style.css" />
+        <link rel="stylesheet" type="text/css" href="styles/custom.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+        />
+        <link
+            rel="stylesheet"
+            type="text/css"
+            href="fonts/css/fontawesome-all.min.css"
+        />
+        <link
+            rel="manifest"
+            href="_manifest.json"
+            data-pwa-version="set_in_manifest_and_pwa_js"
+        />
+        <link
+            rel="apple-touch-icon"
+            sizes="180x180"
+            href="app/icons/icon-192x192.png"
+        />
+    </head>
+
+    <body class="theme-light">
+        <div id="preloader">
+            <div class="spinner-border color-highlight" role="status"></div>
+        </div>
+
+        <div id="page">
+            <div
+                class="header header-fixed header-logo-center header-auto-show"
+            >
+                <a href="index.html" class="header-title">Tin tức</a>
+                <a href="#" data-back-button class="header-icon header-icon-1"><i class="fas fa-chevron-left"></i></a>
+        <!-- <a href="#" data-menu="menu-main" class="header-icon header-icon-4"><i class="fas fa-bars"></i></a> -->
+                <!-- <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-dark"><i class="fas fa-sun"></i></a>
+        <a href="#" data-toggle-theme class="header-icon header-icon-4 show-on-theme-light"><i
+          class="fas fa-moon"></i></a> -->
+            </div>
+
+            <div id="footer-bar" class="footer-bar-2 shadow-xl rounded-s">
+                <a href="page-news-home.html" class="active-nav"
+                    ><i class="fa fa-newspaper"></i><span>Tin tức</span></a
+                >
+                <a href="page-about.html"
+                    ><i class="fa fa-file"></i><span>Về chúng tôi</span></a
+                >
+                <a href="page-careers.html"
+                    ><i class="fa fa-male"></i><span>Tuyển dụng</span></a
+                >
+                <a href="page-contact.html" 
+                    ><i class="fa fa-address-book"></i><span>Liên hệ</span></a
+                >
+                <a href="tel:01234567890"
+                    ><i class="fa fa-phone"></i><span>Gọi ngay</span></a
+                >
+            </div>
+
+            <div class="page-title page-title-fixed">
+                <h1>Tin tức</h1>
+                <!-- <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-share"><i
+          class="fa fa-share-alt"></i></a> -->
+                <!-- <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-light" data-toggle-theme><i
+          class="fa fa-moon"></i></a>
+      <a href="#" class="page-title-icon shadow-xl bg-theme color-theme show-on-theme-dark" data-toggle-theme><i
+          class="fa fa-lightbulb color-yellow-dark"></i></a> -->
+                <!-- <a href="#" class="page-title-icon shadow-xl bg-theme color-theme" data-menu="menu-main"><i
+          class="fa fa-bars"></i></a> -->
+            </div>
+            <div class="page-title-clear"></div>
+
+            <div class="page-content">
+                <!-- <div class="tab-controls mr-3 ml-3 tabs-round tab-animated tabs-medium tabs-rounded clearfix shadow-xl mb-4"
+        data-tab-items="1" data-tab-active="bg-highlight activated color-white">
+
+        <a href="#" class="font-12" data-tab-active data-tab="tab-1">Bài mới</a>
+       <a href="#" class="font-12" data-tab="tab-2">Tiến độ hiện tại</a>
+      </div> -->
+
+                <!-- <div class="tab-content" id="tab-1"> -->
+                <div class="card card-style">
+                    <img src="images/catdog.png" class="img-fluid" />
+                    <div class="content">
+                        <!-- <p class="mb-n1 color-highlight font-600">Tutorials</p> -->
+                        <h1>Cam kết của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 15 phút
+                        </p>
+
+                        <p>
+                            Pet Mart cung cấp những sản phẩm và dịch vụ chất
+                            lượng tốt nhất dành cho thú cưng. Phát triển nhiều
+                            loại dịch vụ phong phú để giúp cho cuộc sống của thú
+                            cưng đầy đủ và hạnh phúc hơn.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider divider-margins"></div>
+                <div class="card card-style">
+                    <div
+                        class="card rounded-0 mb-0 bg-17"
+                        data-card-height="250"
+                    ></div>
+                    <div class="content">
+                        <p class="badge mb-n1 bg-red-dark font-600">Đặc biệt</p>
+                        <h1>Tầm nhìn của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 3 giờ 15 phút
+                        </p>
+
+                        <p>
+                            Chúng tôi tin rằng đó là nhiệm vụ của chúng tôi để
+                            đảm bảo sức khỏe và hạnh phúc cho thú cưng. Giúp
+                            chúng thật sự hiểu rằng chúng đang được yêu thương
+                            và an toàn. Chúng tôi tin rằng thú cưng sẽ làm cho
+                            con người tốt đẹp hơn. Chúng sẽ làm phong phú thêm
+                            cho cuộc sống của chúng ta và xây dựng xã hội văn
+                            minh, phát triển. Chúng tôi tin tưởng vào những gì
+                            chúng tôi đang làm dựa trên những giá trị tiêu chuẩn
+                            trong việc chăm sóc động vật. Chất lượng sản phẩm và
+                            chăm sóc khách hàng.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail1.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-style">
+                    <img src="images/catdog.png" class="img-fluid" />
+                    <div class="content">
+                        <!-- <p class="mb-n1 color-highlight font-600">Tutorials</p> -->
+                        <h1>Cam kết của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 15 phút
+                        </p>
+
+                        <p>
+                            Pet Mart cung cấp những sản phẩm và dịch vụ chất
+                            lượng tốt nhất dành cho thú cưng. Phát triển nhiều
+                            loại dịch vụ phong phú để giúp cho cuộc sống của thú
+                            cưng đầy đủ và hạnh phúc hơn.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider divider-margins"></div>
+                <div class="card card-style">
+                    <div
+                        class="card rounded-0 mb-0 bg-17"
+                        data-card-height="250"
+                    ></div>
+                    <div class="content">
+                        <p class="badge mb-n1 bg-red-dark font-600">Đặc biệt</p>
+                        <h1>Tầm nhìn của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 3 giờ 15 phút
+                        </p>
+
+                        <p>
+                            Chúng tôi tin rằng đó là nhiệm vụ của chúng tôi để
+                            đảm bảo sức khỏe và hạnh phúc cho thú cưng. Giúp
+                            chúng thật sự hiểu rằng chúng đang được yêu thương
+                            và an toàn. Chúng tôi tin rằng thú cưng sẽ làm cho
+                            con người tốt đẹp hơn. Chúng sẽ làm phong phú thêm
+                            cho cuộc sống của chúng ta và xây dựng xã hội văn
+                            minh, phát triển. Chúng tôi tin tưởng vào những gì
+                            chúng tôi đang làm dựa trên những giá trị tiêu chuẩn
+                            trong việc chăm sóc động vật. Chất lượng sản phẩm và
+                            chăm sóc khách hàng.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail1.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-style">
+                    <img src="images/catdog.png" class="img-fluid" />
+                    <div class="content">
+                        <!-- <p class="mb-n1 color-highlight font-600">Tutorials</p> -->
+                        <h1>Cam kết của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 15 phút
+                        </p>
+
+                        <p>
+                            Pet Mart cung cấp những sản phẩm và dịch vụ chất
+                            lượng tốt nhất dành cho thú cưng. Phát triển nhiều
+                            loại dịch vụ phong phú để giúp cho cuộc sống của thú
+                            cưng đầy đủ và hạnh phúc hơn.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider divider-margins"></div>
+                <div class="card card-style">
+                    <div
+                        class="card rounded-0 mb-0 bg-17"
+                        data-card-height="250"
+                    ></div>
+                    <div class="content">
+                        <p class="badge mb-n1 bg-red-dark font-600">Đặc biệt</p>
+                        <h1>Tầm nhìn của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 3 giờ 15 phút
+                        </p>
+
+                        <p>
+                            Chúng tôi tin rằng đó là nhiệm vụ của chúng tôi để
+                            đảm bảo sức khỏe và hạnh phúc cho thú cưng. Giúp
+                            chúng thật sự hiểu rằng chúng đang được yêu thương
+                            và an toàn. Chúng tôi tin rằng thú cưng sẽ làm cho
+                            con người tốt đẹp hơn. Chúng sẽ làm phong phú thêm
+                            cho cuộc sống của chúng ta và xây dựng xã hội văn
+                            minh, phát triển. Chúng tôi tin tưởng vào những gì
+                            chúng tôi đang làm dựa trên những giá trị tiêu chuẩn
+                            trong việc chăm sóc động vật. Chất lượng sản phẩm và
+                            chăm sóc khách hàng.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail1.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-style">
+                    <img src="images/catdog.png" class="img-fluid" />
+                    <div class="content">
+                        <!-- <p class="mb-n1 color-highlight font-600">Tutorials</p> -->
+                        <h1>Cam kết của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 15 phút
+                        </p>
+
+                        <p>
+                            Pet Mart cung cấp những sản phẩm và dịch vụ chất
+                            lượng tốt nhất dành cho thú cưng. Phát triển nhiều
+                            loại dịch vụ phong phú để giúp cho cuộc sống của thú
+                            cưng đầy đủ và hạnh phúc hơn.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider divider-margins"></div>
+                <div class="card card-style">
+                    <div
+                        class="card rounded-0 mb-0 bg-17"
+                        data-card-height="250"
+                    ></div>
+                    <div class="content">
+                        <p class="badge mb-n1 bg-red-dark font-600">Đặc biệt</p>
+                        <h1>Tầm nhìn của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 3 giờ 15 phút
+                        </p>
+
+                        <p>
+                            Chúng tôi tin rằng đó là nhiệm vụ của chúng tôi để
+                            đảm bảo sức khỏe và hạnh phúc cho thú cưng. Giúp
+                            chúng thật sự hiểu rằng chúng đang được yêu thương
+                            và an toàn. Chúng tôi tin rằng thú cưng sẽ làm cho
+                            con người tốt đẹp hơn. Chúng sẽ làm phong phú thêm
+                            cho cuộc sống của chúng ta và xây dựng xã hội văn
+                            minh, phát triển. Chúng tôi tin tưởng vào những gì
+                            chúng tôi đang làm dựa trên những giá trị tiêu chuẩn
+                            trong việc chăm sóc động vật. Chất lượng sản phẩm và
+                            chăm sóc khách hàng.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail1.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card card-style">
+                    <img src="images/catdog.png" class="img-fluid" />
+                    <div class="content">
+                        <!-- <p class="mb-n1 color-highlight font-600">Tutorials</p> -->
+                        <h1>Cam kết của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 15 phút
+                        </p>
+
+                        <p>
+                            Pet Mart cung cấp những sản phẩm và dịch vụ chất
+                            lượng tốt nhất dành cho thú cưng. Phát triển nhiều
+                            loại dịch vụ phong phú để giúp cho cuộc sống của thú
+                            cưng đầy đủ và hạnh phúc hơn.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1 float-left"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="divider divider-margins"></div>
+                <div class="card card-style">
+                    <div
+                        class="card rounded-0 mb-0 bg-17"
+                        data-card-height="250"
+                    ></div>
+                    <div class="content">
+                        <p class="badge mb-n1 bg-red-dark font-600">Đặc biệt</p>
+                        <h1>Tầm nhìn của chúng tôi</h1>
+                        <p
+                            class="opacity-60 text-uppercase font-10 mt-n2 font-600 mb-1"
+                        >
+                            Admin - 3 giờ 15 phút
+                        </p>
+
+                        <p>
+                            Chúng tôi tin rằng đó là nhiệm vụ của chúng tôi để
+                            đảm bảo sức khỏe và hạnh phúc cho thú cưng. Giúp
+                            chúng thật sự hiểu rằng chúng đang được yêu thương
+                            và an toàn. Chúng tôi tin rằng thú cưng sẽ làm cho
+                            con người tốt đẹp hơn. Chúng sẽ làm phong phú thêm
+                            cho cuộc sống của chúng ta và xây dựng xã hội văn
+                            minh, phát triển. Chúng tôi tin tưởng vào những gì
+                            chúng tôi đang làm dựa trên những giá trị tiêu chuẩn
+                            trong việc chăm sóc động vật. Chất lượng sản phẩm và
+                            chăm sóc khách hàng.
+                        </p>
+
+                        <div class="d-flex">
+                            <div class="mr-auto">
+                                <div class="list-group list-custom-large mt-n3">
+                                    <a href="#" class="border-0">
+                                        <img
+                                            src="images/catdog.png"
+                                            class="rounded-sm"
+                                        />
+                                        <span>Admin</span>
+                                        <strong>PetMon</strong>
+                                    </a>
+                                </div>
+                            </div>
+                            <div>
+                                <a
+                                    href="page-detail1.html"
+                                    class="btn btn-full btn-s font-600 rounded-s gradient-highlight mt-1"
+                                    >Xem</a
+                                >
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- Page content ends here-->
+
+            <!-- Main Menu-->
+            <div
+                id="menu-main"
+                class="menu menu-box-left rounded-0"
+                data-menu-load="menu-main.html"
+                data-menu-width="280"
+                data-menu-active="nav-pages"
+            ></div>
+
+            <!-- Share Menu-->
+            <div
+                id="menu-share"
+                class="menu menu-box-bottom rounded-m"
+                data-menu-load="menu-share.html"
+                data-menu-height="370"
+            ></div>
+
+            <!-- Colors Menu-->
+            <div
+                id="menu-colors"
+                class="menu menu-box-bottom rounded-m"
+                data-menu-load="menu-colors.html"
+                data-menu-height="480"
+            ></div>
+        </div>
+        <script type="text/javascript" src="scripts/jquery.js"></script>
+        <script type="text/javascript" src="scripts/bootstrap.min.js"></script>
+        <script type="text/javascript" src="scripts/custom.js"></script>
+    </body>
+</html>
