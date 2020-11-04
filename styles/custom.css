@@ -23,6 +23,15 @@
 .bg-18 {
     background-image: url(../images/nhanvien.png);
 }
+.bg-19 {
+    background-image: url(../images/new2.jpg);
+}
+.bg-20 {
+    background-image: url(../images/new3.jpg);
+}
+.bg-21 {
+    background-image: url(../images/new4.jpg);
+}
 .cart-team {
     display: flex;
     flex-wrap: wrap;
@@ -39,11 +48,13 @@
     padding: 10px;
     border-radius: 80px;
     border: 1px solid #e1e1e1;
+    background-color: rgba(43, 19, 19, 0.1);
 }
 .cart-team-item img {
     width: 100%;
     height: auto;
     object-fit: cover;
+    border-radius: 99px;
 }
 @media (max-width: 991px) {
     .box-img {
